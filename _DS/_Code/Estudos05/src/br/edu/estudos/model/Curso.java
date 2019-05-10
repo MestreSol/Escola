@@ -1,6 +1,7 @@
 package br.edu.estudos.model;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Curso {
@@ -60,7 +61,22 @@ public class Curso {
 		this.listaDiciplinas = new ArrayList<Disciplina>();
 	}
 	public String Detalhar() {
-		return Descricao;
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		String valor = "";
+		int AnoInicio = Inicio.getYear();
+		int MesInicio = Inicio.getMonthValue();
+		int DiaInicio = Inicio.getDayOfMonth();
+		int AnoFim = Termino.getYear();
+		int MesFim = Termino.getMonthValue();
+		int DiaFim = Termino.getDayOfMonth();
+		int Ano = AnoInicio - AnoFim;
+		int Mes = MesInicio - MesFim;
+		int Dia = DiaInicio - DiaFim;
+		for(Disciplina a : listaDiciplinas) {
+			valor += "\n"+a.getDescricao();
+		}
+		return "Descricao: "+this.Descricao+"\nModalidade: "+this.Modalidade+"\nInicio: "+Inicio.format(formatador)+"; Termino: "+Termino.format(formatador)+
+				"\nDuracao: "+Dia+"/"+Mes+"/"+Ano+"\nDiciplinas: "+valor;
 	}
 	
 }

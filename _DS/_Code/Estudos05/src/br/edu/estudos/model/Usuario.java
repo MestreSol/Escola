@@ -77,5 +77,12 @@ public class Usuario {
 		this.cursos = new ArrayList<Curso>();
 	}
 	
-	
+	public String identificar() {
+		String valor = "";
+		for(Curso Curso : cursos) {
+			valor += "\n"+Curso.getDescricao();
+		}
+		return "Nome: "+this.Nome+"\nTipo: "+this.Tipo+"\nCursos: "+valor;
+		
+	}
 }
