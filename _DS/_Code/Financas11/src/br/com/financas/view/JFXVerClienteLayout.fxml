@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="699.0" style="-fx-background-color: #f1f0cc;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.financas.controller.JFXVerClienteControle">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-6.0" prefHeight="51.0" prefWidth="715.0" style="-fx-background-color: #690d0a;" text="Cliente" textFill="#eee5e5">
+         <font>
+            <Font name="Old English Text MT" size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvCliente" layoutY="51.0" prefHeight="296.0" prefWidth="699.0" style="-fx-background-color: #f1f0cc;">
+        <columns>
+          <TableColumn fx:id="tcID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tcNome" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="tcEndereco" prefWidth="75.0" text="Endereco" />
+            <TableColumn fx:id="tcCPF" prefWidth="75.0" text="CPF" />
+            <TableColumn fx:id="tcNascimento" prefWidth="75.0" text="Nascimento" />
+            <TableColumn fx:id="tcContato" prefWidth="75.0" text="Contato" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="btExcluir" layoutX="26.0" layoutY="357.0" mnemonicParsing="false" onAction="#Excluir" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #fffeea;" text="Excluir" />
+      <Button fx:id="btModificar" layoutX="141.0" layoutY="357.0" mnemonicParsing="false" onAction="#Modificar" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #fffeea;" text="Modificar">
+         <font>
+            <Font name="Old English Text MT" size="12.0" />
+         </font></Button>
+      <Button fx:id="btFechar" layoutX="514.0" layoutY="357.0" mnemonicParsing="false" onAction="#Fechar" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #fffeea;" text="Fechar">
+         <font>
+            <Font name="Old English Text MT" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

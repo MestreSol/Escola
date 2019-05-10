@@ -1,0 +1,14 @@
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\bin\Debug\MainProject.exe.config
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\bin\Debug\MainProject.exe
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\bin\Debug\MainProject.pdb
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainWindow.g.cs
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\App.g.cs
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainProject_MarkupCompile.cache
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainProject_MarkupCompile.lref
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainWindow.baml
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainProject.g.resources
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainProject.Properties.Resources.resources
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainProject.csproj.GenerateResource.Cache
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainProject.exe
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainProject.pdb
+E:\_Escola\_PC\UniversalToolV0.0\MainProject\obj\Debug\MainProject.csprojResolveAssemblyReference.cache

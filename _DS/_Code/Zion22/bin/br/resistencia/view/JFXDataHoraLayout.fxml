@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="872.0" style="-fx-background-color: #1b2d0d;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.resistencia.controller.JFXDataHoraControle">
+   <children>
+      <DatePicker fx:id="dpDataAtual" layoutX="32.0" layoutY="125.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #cceae7;" />
+      <Spinner fx:id="spHoraAtual" layoutX="214.0" layoutY="124.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #cceae7;" />
+      <Button fx:id="bFechar" layoutX="729.0" layoutY="507.0" mnemonicParsing="false" onAction="#fechar" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #000000;" text="Fechar" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect></Button>
+      <Label layoutX="32.0" layoutY="96.0" text="Data atual:" textFill="WHITE" />
+      <Label layoutX="215.0" layoutY="95.0" text="Hora atual:" textFill="WHITE" />
+      <Spinner fx:id="spMinutoAtual" layoutX="288.0" layoutY="124.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #cceae7;" />
+      <Spinner fx:id="spSegundoAtual" layoutX="363.0" layoutY="124.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #cceae7;" />
+      <Button fx:id="bInstant" layoutX="35.0" layoutY="186.0" mnemonicParsing="false" onAction="#padraoInstant" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Formato Instant" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bLocalDate" layoutX="35.0" layoutY="235.0" mnemonicParsing="false" onAction="#padraoLocalDate" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Formato LocalDate" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bDia" layoutX="35.0" layoutY="341.0" mnemonicParsing="false" onAction="#dia" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Dia" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bMes" layoutX="35.0" layoutY="390.0" mnemonicParsing="false" onAction="#mes" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Mês" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bAno" layoutX="35.0" layoutY="437.0" mnemonicParsing="false" onAction="#ano" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Ano" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bLocalTime" layoutX="239.0" layoutY="235.0" mnemonicParsing="false" onAction="#padraoLocalTime" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Formato LocalTime" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bHora" layoutX="239.0" layoutY="341.0" mnemonicParsing="false" onAction="#hora" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Hora" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bMinuto" layoutX="239.0" layoutY="390.0" mnemonicParsing="false" onAction="#minuto" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Minuto" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bSegundo" layoutX="239.0" layoutY="437.0" mnemonicParsing="false" onAction="#segundo" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Segundo" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Separator layoutX="442.0" layoutY="79.0" orientation="VERTICAL" prefHeight="407.0" prefWidth="0.0" />
+      <DatePicker fx:id="dpDataInicial" layoutX="455.0" layoutY="125.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #cceae7;" />
+      <Spinner fx:id="spHoraInicial" layoutX="643.0" layoutY="125.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #cceae7;" />
+      <Label layoutX="455.0" layoutY="96.0" text="Data inicial:" textFill="WHITE" />
+      <Label layoutX="647.0" layoutY="95.0" text="Hora inicial:" textFill="WHITE" />
+      <Spinner fx:id="spMinutoInicial" layoutX="717.0" layoutY="125.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #cceae7;" />
+      <Spinner fx:id="spSegundoInicial" layoutX="791.0" layoutY="125.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #cceae7;" />
+      <DatePicker fx:id="dpDataFinal" layoutX="455.0" layoutY="201.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #cceae7;" />
+      <Spinner fx:id="spHoraFinal" layoutX="643.0" layoutY="200.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #cceae7;" />
+      <Label layoutX="455.0" layoutY="172.0" text="Data final:" textFill="WHITE" />
+      <Label layoutX="645.0" layoutY="171.0" text="Hora final:" textFill="WHITE" />
+      <Spinner fx:id="spMinutoFinal" layoutX="717.0" layoutY="200.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #cceae7;" />
+      <Spinner fx:id="spSegundoFinal" layoutX="791.0" layoutY="200.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #cceae7;" />
+      <Button fx:id="bDiferencaDatas" layoutX="455.0" layoutY="266.0" mnemonicParsing="false" onAction="#diferencaDatas" prefHeight="31.0" prefWidth="190.0" style="-fx-background-color: #000000;" text="Diferenças entre datas" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bDiferencaHorarios" layoutX="663.0" layoutY="266.0" mnemonicParsing="false" onAction="#diferencaHorarios" prefHeight="31.0" prefWidth="190.0" style="-fx-background-color: #000000;" text="Diferença entre horários" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Separator layoutX="32.0" layoutY="486.0" prefHeight="0.0" prefWidth="813.0" />
+      <Label layoutX="200.0" layoutY="12.0" text="Formatações" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="619.0" layoutY="12.0" text="Cálculos" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Separator layoutX="35.0" layoutY="79.0" prefHeight="3.0" prefWidth="813.0" />
+      <Button fx:id="bDataFormatada" layoutX="35.0" layoutY="290.0" mnemonicParsing="false" onAction="#dataFormatada" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Data formatada" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bHoraFormatada" layoutX="239.0" layoutY="290.0" mnemonicParsing="false" onAction="#horaFormatada" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Hora formatada" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+      <Button fx:id="bLocalDateTime" layoutX="239.0" layoutY="186.0" mnemonicParsing="false" onAction="#padraoLocalDateTime" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Formato LocalDateTime" textFill="WHITE">
+         <effect>
+            <DropShadow color="#cceae7" height="40.0" radius="19.5" spread="0.2" width="40.0" />
+         </effect>
+      </Button>
+   </children>
+</Pane>

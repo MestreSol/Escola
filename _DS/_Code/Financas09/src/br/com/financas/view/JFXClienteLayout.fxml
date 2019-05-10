@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="600.0" style="-fx-background-color: #F0FFF0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.financas.controller.JFXClienteControle">
+   <children>
+      <Label layoutX="40.0" layoutY="113.0" text="Nome:" />
+      <TextField fx:id="tfNome" layoutX="38.0" layoutY="140.0" prefHeight="31.0" prefWidth="333.0" />
+      <Label layoutX="389.0" layoutY="113.0" text="CPF:" />
+      <TextField fx:id="tfCpf" layoutX="387.0" layoutY="139.0" />
+      <Label layoutX="40.0" layoutY="193.0" text="Endereço:" />
+      <TextField fx:id="tfEndereco" layoutX="38.0" layoutY="218.0" prefHeight="31.0" prefWidth="333.0" />
+      <DatePicker fx:id="dpNascimento" layoutX="387.0" layoutY="218.0" prefHeight="31.0" prefWidth="186.0" />
+      <Label layoutX="387.0" layoutY="190.0" text="Data de nascimento:" />
+      <Button fx:id="bInserir" layoutX="40.0" layoutY="300.0" mnemonicParsing="false" onAction="#inserir" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #2E8B57;" text="Inserir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="bCarregar" layoutX="314.0" layoutY="300.0" mnemonicParsing="false" onAction="#carregar" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #2E8B57;" text="Carregar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="bIdentificar" layoutX="449.0" layoutY="300.0" mnemonicParsing="false" onAction="#identificar" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #2E8B57;" text="identificar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="bLimpar" layoutX="177.0" layoutY="301.0" mnemonicParsing="false" onAction="#limpar" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #2E8B57;" text="Limpar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="bFechar" layoutX="449.0" layoutY="365.0" mnemonicParsing="false" onAction="#fechar" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #2E8B57;" text="Fechar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="27.0" prefHeight="51.0" prefWidth="599.0" text="Cliente" textFill="SEAGREEN">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
