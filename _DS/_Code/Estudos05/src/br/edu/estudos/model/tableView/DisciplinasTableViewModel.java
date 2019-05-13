@@ -40,11 +40,17 @@ public class DisciplinasTableViewModel {
 	public void setpDescricao(SimpleStringProperty pDescricao) {
 		this.pDescricao = pDescricao;
 	}
+	public void setpDescricao(String pDescricao) {
+		this.pDescricao.set(pDescricao);
+	}
 	public Double getCargaHoraria(){
 		return pCargaHoraria.get();
 	}
 	public SimpleDoubleProperty getpCargaHoraria() {
 		return pCargaHoraria;
+	}
+	public void setpCargaHoraria(Double pCargaHoraria) {
+		this.pCargaHoraria.set(pCargaHoraria);
 	}
 	public void setpCargaHoraria(SimpleDoubleProperty pCargaHoraria) {
 		this.pCargaHoraria = pCargaHoraria;
@@ -58,11 +64,17 @@ public class DisciplinasTableViewModel {
 	public void setpNomeDocente(SimpleStringProperty pNomeDocente) {
 		this.pNomeDocente = pNomeDocente;
 	}
+	public void setpNomeDocente(String pNomeDocente) {
+		this.pNomeDocente.set(pNomeDocente);
+	}
 	public String getModalidade() {
 		return pModalidade.get();
 	}
 	public SimpleStringProperty getpModalidade() {
 		return pModalidade;
+	}
+	public void setpModalidade(String pModalidade) {
+		this.pModalidade.set(pModalidade);
 	}
 	public void setpModalidade(SimpleStringProperty pModalidade) {
 		this.pModalidade = pModalidade;
@@ -73,6 +85,9 @@ public class DisciplinasTableViewModel {
 	public SimpleObjectProperty<LocalDate> getpInicio() {
 		return pInicio;
 	}
+	public void setpInicio(LocalDate pInicio) {
+		this.pInicio.set(pInicio);
+	}
 	public void setpInicio(SimpleObjectProperty<LocalDate> pInicio) {
 		this.pInicio = pInicio;
 	}
@@ -81,6 +96,9 @@ public class DisciplinasTableViewModel {
 	}
 	public SimpleObjectProperty<LocalDate> getpTermino() {
 		return pTermino;
+	}
+	public void setpTermino(LocalDate pTermino) {
+		this.pTermino.set(pTermino);
 	}
 	public void setpTermino(SimpleObjectProperty<LocalDate> pTermino) {
 		this.pTermino = pTermino;
