@@ -1,0 +1,14 @@
+﻿<Window x:Class="ChatBot.Itens"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatBot"
+        mc:Ignorable="d"
+        Title="Itens" Height="450" Width="332.548" Background="#FF464646" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Itens" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Background="{x:Null}" Foreground="#DDFF0707"/>
+        <ListBox x:Name="Itens1" HorizontalAlignment="Left" Height="383" Margin="10,57,0,0" VerticalAlignment="Top" Width="313" Foreground="#DDFFFFFF" SelectionChanged="Itens1_SelectionChanged"/>
+
+    </Grid>
+</Window>

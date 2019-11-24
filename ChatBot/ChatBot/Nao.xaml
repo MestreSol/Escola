@@ -1,0 +1,15 @@
+﻿<Window x:Class="ChatBot.Nao"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatBot"
+        mc:Ignorable="d" Height="568.612" Width="554.628" ResizeMode="NoResize" Title="Ruohu's Chat" Icon="IMG/Icon.png" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF232020">
+        <Label x:Name="lbTituloInicial" Content="Bem vindo a Ruohu" HorizontalAlignment="Left" Margin="124,49,0,0" VerticalAlignment="Top" Width="292" Background="#00000000" Foreground="#FFFF8408" FontSize="36" FontFamily="Californian FB"/>
+        <Label x:Name="lbConteudoUm" Content="O bot irá lhe dar uma situação e você escolhera uma das 4 &#xD;&#xA;ações possiveis, e baseado na sua sorte, o bot dirá o &#xD;&#xA;resultado e assim sucessivamente" HorizontalAlignment="Left" Margin="64,175,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+        <Label Content="Podemos comessar?" HorizontalAlignment="Left" Margin="204,367,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+        <Button x:Name="btSim" Content="Ok Vamos comessar" HorizontalAlignment="Left" Margin="204,453,0,0" VerticalAlignment="Top" Width="132" Background="#FF33A619" Height="33" Click="btSim_Click"/>
+
+    </Grid>
+</Window>

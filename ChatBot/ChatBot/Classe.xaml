@@ -1,0 +1,24 @@
+﻿<Window x:Class="ChatBot.Classe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatBot"
+        mc:Ignorable="d" Height="568.612" Width="558.612" ResizeMode="NoResize" Title="Ruohu's Chat" Icon="IMG/Icon.png" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid Background="#ff023045">
+        <Label x:Name="lbTituloInicial" Content="Vamos começar" HorizontalAlignment="Left" Margin="145,48,0,0" VerticalAlignment="Top" Width="251" Background="#00000000" Foreground="#FFFF8408" FontSize="36" FontFamily="Californian FB"/>
+        <Label x:Name="lbConteudoUm" Content="Escolha uma Clase" HorizontalAlignment="Left" Margin="196,119,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+        <Label x:Name="lbDois" Content="A sua clase ira influenciar nas suas habilidades e itens iniciais" HorizontalAlignment="Left" Margin="59,150,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+        <Button x:Name="btSim" Content="Sim" HorizontalAlignment="Left" Margin="209,485,0,0" VerticalAlignment="Top" Width="132" Background="#FF33A619" Height="33" Click="btSim_Click"/>
+        <Image x:Name="Modelo" HorizontalAlignment="Left" Height="239" Margin="155,210,0,0" VerticalAlignment="Top" Width="241" Source="IMG/Cosmico.gif">
+
+        </Image>
+        <Label HorizontalAlignment="Left" Margin="44,306,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White">
+            <Button Content="&lt;" Width="35" Background="#00000000" BorderBrush="#00707070" Foreground="White" Click="Anterior" />
+        </Label>
+        <Label HorizontalAlignment="Left" Margin="465,306,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White">
+            <Button x:Name="btProximo" Content="&gt;" Width="35" Background="#00000000" BorderBrush="#00707070" Foreground="White" Click="Proximo" />
+        </Label>
+        <Label x:Name="nome" Content="Cosmico" HorizontalAlignment="Left" Margin="238,186,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+    </Grid>
+</Window>

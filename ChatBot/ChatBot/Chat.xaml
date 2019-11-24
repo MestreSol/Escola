@@ -1,0 +1,73 @@
+﻿<Window x:Class="ChatBot.Chat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatBot"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="600" Width="1080" ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" WindowStyle="None" FontFamily="Dosis">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="270"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="270"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#FF272727" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal" Height="100" VerticalAlignment="Top" Background="Black">
+                <StackPanel.Effect>
+                    <DropShadowEffect BlurRadius="30" ShadowDepth="1"/>
+                </StackPanel.Effect>
+                <Border Width="10" Height="10" HorizontalAlignment="Right" Margin="15" Background="Green" CornerRadius="15" VerticalAlignment="Center"/>
+                <TextBlock Text="Rouru" FontSize="28" VerticalAlignment="Center" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Margin="0 100" VerticalAlignment="Bottom">
+
+            </StackPanel>
+            <Border Background="#FF151515" VerticalAlignment="Bottom">
+                <Grid Margin="0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="mensagem" Grid.Column="0" MaxHeight="80" TextWrapping="Wrap" Margin="5" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Foreground="White"/>
+                    <Button Grid.Column="3" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Click="button_Click">
+                        <materialDesign:PackIcon Kind="Send"/>
+                    </Button>
+                    <Button Grid.Column="2" Background="{x:Null}" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Click="Button_Click_1">
+                        <materialDesign:PackIcon Kind="Attachment" Foreground="{StaticResource PrimaryHueDarkBrush}"/>
+                    </Button>
+                    <Button Background="{x:Null}" Grid.Column="1" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Click="Button_Click_2">
+                        <materialDesign:PackIcon Kind="Smiley" Foreground="{StaticResource PrimaryHueDarkBrush}"/>
+                    </Button>
+                </Grid>
+            </Border>
+            <ListBox x:Name="ChatBox" HorizontalAlignment="Left" Height="409" Margin="10,117,0,0" VerticalAlignment="Top" Width="774"/>
+        </Grid>
+
+        <StackPanel Grid.Column="2" Background="#FF292929">
+            <Button HorizontalAlignment="Right" Margin="10" Style="{StaticResource MaterialDesignFlatButton}" Click="Fechar">
+                <materialDesign:PackIcon Kind="Close"/>
+            </Button>
+
+            <Border Width="150" Height="150" CornerRadius="80" BorderThickness="1" BorderBrush="Gray">
+                <Border.Background>
+                    <ImageBrush ImageSource="IMG/hqdefault.jpg"/>
+                </Border.Background>
+            </Border>
+
+            <TextBlock HorizontalAlignment="Center" Margin="0 10 0 0" Foreground="White" FontSize="18" FontWeight="Bold"><Run Text="Rouru"/><LineBreak/><Run/></TextBlock>
+
+            <StackPanel Margin="20">
+                <StackPanel Orientation="Horizontal" Margin="0 3"/>
+                <StackPanel Orientation="Horizontal" Margin="0 3"/>
+                <StackPanel Orientation="Horizontal" Margin="0 3"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="20 0"/>
+        </StackPanel>
+    </Grid>
+</Window>
